@@ -1,0 +1,125 @@
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+        body {
+            font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+            background: #d9e5bd;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            
+        }
+        .rounded-box {
+                background-color:#e6f3c8;
+                padding: 15px;
+                border-radius: 20px;
+                border: 1px solid #ccc;
+                width: fit-content;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+        header {
+            background: #1b3930;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        nav {
+            background: #3c7646;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 12px 0;
+        }
+
+
+        nav a {
+    color: white;
+    text-decoration: burlywood;
+    font-size: 16px;
+    font-weight: bold;
+
+
+    padding: 8px 14px; /* giver plads til boksen */
+    border-radius: 6px;
+
+
+}
+
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.18); /* lidt lysere */
+    transform: scale(1.07); /* gør boksen lidt større */
+}
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+
+        footer {
+            background: #3c7646;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        }
+
+        .item {
+        text-align: center;
+        }
+
+        .item img {
+        width: 100%;
+        display: block;
+        }
+
+        /* Cookie boks */
+        #cookie-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 20px;
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: none;
+            animation: fadeIn 6.7s ease;
+        }
+
+
+        #cookie-box button {
+            background: #000000;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+
+        #cookie-box button:hover {
+            background: #74b9ff;
+        }
+
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+       
+
